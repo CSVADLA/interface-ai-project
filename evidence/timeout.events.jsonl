@@ -1,0 +1,11 @@
+{"timestamp": "2026-09-16T02:41:07.064958+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "run_started", "mode": "replay"}
+{"timestamp": "2026-09-16T02:41:07.066374+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "capability_validated", "capability": "read_member_savings", "schema_version": "1.0"}
+{"timestamp": "2026-09-16T02:41:08.181970+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "navigation_completed"}
+{"timestamp": "2026-09-16T02:41:08.182399+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "step_started", "step_index": 0, "action": "fill"}
+{"timestamp": "2026-09-16T02:41:08.616645+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "step_completed", "step_index": 0, "action": "fill"}
+{"timestamp": "2026-09-16T02:41:08.618415+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "step_started", "step_index": 1, "action": "click"}
+{"timestamp": "2026-09-16T02:41:09.063646+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "step_completed", "step_index": 1, "action": "click"}
+{"timestamp": "2026-09-16T02:41:09.064008+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "step_started", "step_index": 2, "action": "check_search_outcome"}
+{"timestamp": "2026-09-16T02:41:14.071554+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "step_failed", "step_index": 2, "action": "check_search_outcome", "code": "ui_timeout"}
+{"timestamp": "2026-09-16T02:41:14.081687+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "snapshot_saved", "snapshot": "failure-surface"}
+{"timestamp": "2026-09-16T02:41:14.352195+00:00", "run_id": "20260916T024107Z-b3c86686", "event": "run_completed", "result": {"status": "failure", "category": "recoverable", "code": "ui_timeout", "step_index": 2, "expected": "Complete check_search_outcome step", "observed": "Timed out waiting for UI"}}

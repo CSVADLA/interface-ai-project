@@ -1,0 +1,15 @@
+{"timestamp": "2026-09-17T05:48:41.897497+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "run_started", "mode": "replay"}
+{"timestamp": "2026-09-17T05:48:41.913142+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "capability_validated", "capability": "read_member_savings", "schema_version": "1.0"}
+{"timestamp": "2026-09-17T05:48:48.158421+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "navigation_completed"}
+{"timestamp": "2026-09-17T05:48:48.159128+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_started", "step_index": 0, "action": "fill"}
+{"timestamp": "2026-09-17T05:48:48.591436+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_completed", "step_index": 0, "action": "fill"}
+{"timestamp": "2026-09-17T05:48:48.593049+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_started", "step_index": 1, "action": "click"}
+{"timestamp": "2026-09-17T05:48:49.054000+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_completed", "step_index": 1, "action": "click"}
+{"timestamp": "2026-09-17T05:48:49.054332+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_started", "step_index": 2, "action": "check_search_outcome"}
+{"timestamp": "2026-09-17T05:48:49.069960+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_completed", "step_index": 2, "action": "check_search_outcome"}
+{"timestamp": "2026-09-17T05:48:49.070259+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_started", "step_index": 3, "action": "click"}
+{"timestamp": "2026-09-17T05:48:49.541978+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_completed", "step_index": 3, "action": "click"}
+{"timestamp": "2026-09-17T05:48:49.542503+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_started", "step_index": 4, "action": "click"}
+{"timestamp": "2026-09-17T05:48:50.021928+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "step_completed", "step_index": 4, "action": "click"}
+{"timestamp": "2026-09-17T05:48:50.040778+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "checkpoint_verified", "checkpoint": "Savings details"}
+{"timestamp": "2026-09-17T05:48:50.256201+00:00", "run_id": "20260917T054841Z-1a4d2f9a", "event": "run_completed", "result": {"status": "success", "code": "completed", "outputs": {"savings_balance": "[REDACTED]", "currency": "USD"}}}

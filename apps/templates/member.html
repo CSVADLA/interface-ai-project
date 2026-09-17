@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Member Details</title>
+  </head>
+  <body>
+    <h1>Member details</h1>
+    <p>Training application — synthetic member data only.</p>
+
+    <dl>
+      <dt>Member ID</dt>
+      <dd>{{ member_id }}</dd>
+
+      <dt>Name</dt>
+      <dd>{{ member["name"] }}</dd>
+    </dl>
+
+    <p>
+      <a href="{{ url_for('member_savings', member_id=member_id) }}">
+        View savings
+      </a>
+    </p>
+
+    <a href="{{ url_for('home') }}">Back to search</a>
+  </body>
+</html>

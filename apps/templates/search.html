@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Credit Union Admin</title>
+  </head>
+
+  <body>
+    <h1>Credit Union Admin</h1>
+    <p>Training application — synthetic member data only.</p>
+
+    <form action="/" method="get">
+      <label for="member-id">Member ID</label>
+
+      <input
+        id="member-id"
+        name="member_id"
+        type="text"
+        value="{{ member_id }}"
+        pattern="[0-9]{5}"
+        maxlength="5"
+        required
+      />
+
+      <button type="submit">Search</button>
+    </form>
+
+    {% if searched %}
+
+    <section
+      role="region"
+      aria-label="Search results"
+      style="{% if delay_ms %}display: none;{% endif %}"
+    >
+      {% if member %}
+      <h2>Search result</h2>
+      <p>{{ member["name"] }}</p>
+
+      <a href="{{ url_for('member_details', member_id=member_id) }}">
+        Open member
+      </a>
+      {% else %}
+      <p role="status">Member not found.</p>
+      {% endif %}
+    </section>
+
+    {% if delay_ms %}
+    <script>
+      window.setTimeout(() => {
+        document.querySelector(
+          '[aria-label="Search results"]'
+        ).style.display = "block";
+      }, {{ delay_ms }});
+    </script>
+    {% endif %} {% endif %}
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Member Savings</title>
+  </head>
+  <body>
+    <h1>Savings details</h1>
+    <p>Training application — synthetic member data only.</p>
+
+    <p>Member ID: {{ member_id }}</p>
+
+    <h2>Current savings balance</h2>
+    <output aria-label="Savings balance">
+      {{ member["savings_balance"] }}
+    </output>
+    <p>Currency: USD</p>
+
+    <a href="{{ url_for('member_details', member_id=member_id) }}">
+      Back to member
+    </a>
+  </body>
+</html>

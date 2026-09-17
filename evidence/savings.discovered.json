@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "name": "read_member_savings",
+  "input_contract": "SavingsInput",
+  "output_contract": "SavingsOutput",
+  "entry_path": "/",
+  "steps": [
+    {
+      "action": "fill",
+      "target": {
+        "strategy": "label",
+        "name": "Member ID"
+      },
+      "input_parameter": "member_id"
+    },
+    {
+      "action": "click",
+      "target": {
+        "strategy": "role",
+        "role": "button",
+        "name": "Search"
+      }
+    },
+    {
+      "action": "check_search_outcome"
+    },
+    {
+      "action": "click",
+      "target": {
+        "strategy": "role",
+        "role": "link",
+        "name": "Open member"
+      }
+    },
+    {
+      "action": "click",
+      "target": {
+        "strategy": "role",
+        "role": "link",
+        "name": "View savings"
+      }
+    }
+  ],
+  "checkpoint": {
+    "strategy": "role",
+    "role": "heading",
+    "name": "Savings details"
+  },
+  "extraction": {
+    "field": "savings_balance",
+    "target": {
+      "strategy": "label",
+      "name": "Savings balance"
+    },
+    "format": "decimal_string"
+  },
+  "currency": "USD"
+}
