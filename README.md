@@ -15,27 +15,23 @@ The demonstration workflow retrieves a synthetic credit-union member’s savings
 
 ## System flow
 
-```text
-Natural-language goal
-        |
-        v
-LLM discovery loop
-Observe -> Decide -> Validate -> Act
-        |
-        v
-Versioned capability artifact
-        |
-        v
-Deterministic replay without LLM
-        |
-        +-- Success
-        +-- Business outcome
-        +-- Recoverable failure
-        +-- Hard failure
-        +-- Human handoff
-        |
-        v
-Redacted evidence
+```mermaid
+flowchart TD
+    A[Natural-language goal] --> B[LLM discovery loop]
+    B --> C[Observe live UI]
+    C --> D[Choose permitted action]
+    D --> E[Validate model decision]
+    E --> F[Execute with Playwright]
+    F -->|Goal incomplete| C
+    F -->|Workflow successful| G[Versioned capability artifact]
+    G --> H[Deterministic replay without LLM]
+    H --> I{Structured outcome}
+    I --> J[Success]
+    I --> K[Business outcome]
+    I --> L[Recoverable failure]
+    I --> M[Hard failure]
+    I --> N[Human handoff]
+    H --> O[Redacted evidence]
 ```
 
 ## Features
