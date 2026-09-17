@@ -1,5 +1,12 @@
 # Computer-Use Automation System
 
+[![Tests](https://github.com/CSVADLA/interface-ai-project/actions/workflows/tests.yml/badge.svg)](https://github.com/CSVADLA/interface-ai-project/actions/workflows/tests.yml)
+
+[Architecture](REPORT.md#architecture) ·
+[Evidence](evidence/README.md) ·
+[Installation](#installation) ·
+[Tests](#tests)
+
 A small end-to-end computer-use automation system built for the interface.ai take-home assignment.
 
 The system uses an LLM once to discover a workflow against a live browser UI. It records the successful workflow as a typed, versioned capability artifact. Later executions replay that artifact deterministically without calling the LLM.
